@@ -14,7 +14,6 @@ const LATITUDE_DELTA = 0.02;
 const LONGITUDE_DELTA = LATITUDE_DELTA * ASPECT_RATIO;
 
 export default function PlaceMap({ item, onClose }) {
-  console.log("fuck", item)
   const initialRegion = {
     latitude: item.geometry.location.lat,
     longitude: item.geometry.location.lng,
@@ -50,7 +49,6 @@ export default function PlaceMap({ item, onClose }) {
           styles={{ textInput: styles.input }}
           placeholder="Looking for something specific?"
           onPress={(data, details = null) => {
-            //console.log("MAPSTUFF", data, details);
           }}
           query={{
             key: GOOGLE_API_KEY,

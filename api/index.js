@@ -26,7 +26,6 @@ export const getPlacesData = async (location, types) => {
         return values}))
       
     //let places =await Promise.all(promises) //.then(((values)  => { 
-        //console.log("FUCK", values)
       //places = values}))
       //console.log(places)
 

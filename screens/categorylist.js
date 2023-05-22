@@ -34,7 +34,6 @@ export default function Categorylist({ navigation }) {
   }, []);
 
   const renderItem = ({ item }) => {
-    console.log("ITEM", item)
     const photo =
       item.photos && item.photos.length > 0 ? item.photos[0].photo_reference : null;
     const photoUrl = photo
